@@ -33,7 +33,6 @@ for instruct in instructs:
     how_many, from_, to_ = [int(i) for i in res]
 
     moved_crates = stacks[from_][:how_many]
-
     stacks[from_] = stacks[from_][how_many:]
     stacks[to_] = moved_crates + stacks[to_]
 
